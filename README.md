@@ -77,7 +77,7 @@
 ### 2. 克隆 & 编译
 
 ```powershell
-git clone https://github.com/zjc9915/SW2LLM-Parser.git
+git clone https://github.com/mdmodule/SW2LLM-Parser.git
 cd SW2LLM-Parser
 dotnet publish -c Release -r win-x64 -o publish
 ```
@@ -117,7 +117,7 @@ SW2LLM-Parser/
 
 ## 📄 License
 
-MIT License © 2025 Abel (zjc9915)
+MIT License © 2025 mdmodule
 
 ---
 
