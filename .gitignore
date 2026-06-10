@@ -1,0 +1,40 @@
+# ==========================================
+# SW2LLM-Parser .gitignore
+# 适用于 C# / Visual Studio + SolidWorks 二次开发
+# ==========================================
+
+# ── 1. C# 编译产物 & NuGet 还原 ──
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bld/
+publish/
+*.nupkg
+*.snupkg
+
+# ── 2. Visual Studio 本地工作区 ──
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.slnx
+*.DotSettings.user
+
+# ── 3. SolidWorks 运行时临时锁文件 ──
+~$*.sldprt
+~$*.sldasm
+~$*.slddrw
+*.tmp
+AppID.tmp
+
+# ── 4. 🔒 核心安全：拦截所有本地生成的数据集 JSON ──
+#     防止将企业内部零件参数、物料编码泄露到 GitHub
+*.json
+MASTER_DATASET_*
+
+# ── 5. .NET 全局工具本地清单 ──
+dotnet-tools.json
