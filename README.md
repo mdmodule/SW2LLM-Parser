@@ -82,9 +82,16 @@ cd SW2LLM-Parser
 dotnet publish -c Release -r win-x64 -o publish
 ```
 
-### 3. 运行
+### 3. 运行（两种方式）
+
+**方式 A：直接下载编译好的 exe（推荐）**
+
+→ 前往 [Releases](https://github.com/mdmodule/SW2LLM-Parser/releases) 下载 `SwFeatureExporter.exe`，双击即用。
+
+**方式 B：自己编译**
 
 ```powershell
+dotnet publish -c Release -r win-x64 -o publish
 .\publish\SwFeatureExporter.exe
 ```
 
