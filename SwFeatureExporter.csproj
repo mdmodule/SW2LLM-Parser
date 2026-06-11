@@ -6,6 +6,10 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <!-- v6.0: 框架依赖单文件发布（用户需装 .NET 10 Runtime） -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
 
   <ItemGroup>
