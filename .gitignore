@@ -1,6 +1,6 @@
 # ==========================================
 # SW2LLM-Parser .gitignore
-# 适用于 C# / Visual Studio + SolidWorks 二次开发
+# v6.0 Super Pipeline / .NET 10 + SolidWorks
 # ==========================================
 
 # ── 1. C# 编译产物 & NuGet 还原 ──
@@ -32,8 +32,9 @@ publish/
 AppID.tmp
 
 # ── 4. 🔒 核心安全：拦截所有本地生成的数据集 JSON ──
-#     防止将企业内部零件参数、物料编码泄露到 GitHub
+#     v6.0 流式管道输出 STREAM_DATASET_*.json，防止泄露企业零件参数
 *.json
+STREAM_DATASET_*
 MASTER_DATASET_*
 
 # ── 5. .NET 全局工具本地清单 ──
